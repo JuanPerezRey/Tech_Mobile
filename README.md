@@ -1,7 +1,7 @@
 # Tech_Mobile
  API working with MYSQL database, it is a phone store where you can see the cell phones in inventory and also add cell phones.
 
-Español:
+# Español:
 Esta es mi API con base de datos MySQL sobre Tech_Mobile, una tienda de celulares ficticia. En primer lugar se usaron los mismos requerimientos usados abajo con la excepcion de MySQL debido a que PostgreSQL presentaba problemas al momento de ejecutarse la aplicación. Se actualizaron los siguientes archivos para quedar en concordancia con el tema de la tienda y que la aplicación no presentara problemas:
 
 connection_py
@@ -17,7 +17,7 @@ main.py
 .env
 init_db.py
 
-English:
+# English:
 This is my API with MySQL database on Tech_Mobile, a fictitious mobile store. First of all the same requirements used below were used with the exception of MySQL because PostgreSQL presented problems when running the application. The following files were updated to match the theme of the store so that the application would not present problems:
 
 connection_py
@@ -33,9 +33,7 @@ main.py
 .env
 init_db.py
 
-Pasos de Instalacion y Más Información - Installation Steps and More Information
-
-# Proyecto Universidad
+# Pasos de Instalacion y Más Información - Installation Steps and More Information
 
 Este proyecto es una aplicación didáctica para la materia de **Base de Datos Web**. Utiliza **FastAPI** como framework, **SQLModel** como ORM, **PostgreSQL** como sistema de base de datos relacional (RDBMS) y **Jinja2** para las plantillas HTML. El objetivo es permitir realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una tabla de celulares.
 
