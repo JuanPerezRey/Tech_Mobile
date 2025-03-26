@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Lista de Celulares{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center my-4">Lista de Celulares</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>AlmacenamientoGB</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for celular in celulares %}
+            <tr>
+                <td>{{ celular.id }}</td>
+                <td>{{ celular.marca }}</td>
+                <td>{{ celular.modelo }}</td>
+                <td>{{ celular.almacenamientogb }}</td>
+                <td>{{ celular.precio }}</td>
+                <td>{{ celular.stock }}</td>
+                <td>
+                    <a href="/estudiantes/editar/{{ celular.id }}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="/estudiantes/eliminar/{{ celular.id }}" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

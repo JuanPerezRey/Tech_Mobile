@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Editar Celular{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center my-4">Editar Celular</h2>
+    <form action="/estudiantes/editar/{{ celular.id }}" method="post" class="card p-4 shadow">
+        <input type="hidden" name="id" value="{{ celular.id }}">
+        <div class="mb-3">
+            <label class="form-label">Marca</label>
+            <input type="text" name="marca" class="form-control" value="{{ celular.marca }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Modelo</label>
+            <input type="text" name="modelo" class="form-control" value="{{ celular.modelo }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">AlmacenamientoGB</label>
+            <input type="number" name="almacenamientogb" class="form-control" value="{{ celular.almacenamientogb }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Precio</label>
+            <input type="number" name="precio" class="form-control" value="{{ celular.precio }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Stock</label>
+            <input type="number" name="stock" class="form-control" value="{{ celular.stock }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Actualizar</button>
+    </form>
+</div>
+{% endblock %}
